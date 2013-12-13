@@ -1,0 +1,56 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.5.6'
+    }
+}
+
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 10
+    buildToolsVersion "18.1.1"
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+//        instrumentTest {
+//            java.srcDirs = ['Tester/src']
+//            resources.srcDirs = ['Tester/src']
+//            aidl.srcDirs = ['Tester/src']
+//            renderscript.srcDirs = ['Tester/src']
+//            res.srcDirs = ['Tester/res']
+//            assets.srcDirs = ['Tester/assets']
+//
+//            dependencies {
+//                compile fileTree(dir: 'Tester/libs', include: '*.jar')
+//            }
+//
+//        }
+
+//        instrumentTest.setRoot('Tester')
+    }
+
+
+    dependencies {
+//        compile project(':ZonarCommonLib')
+//        compile fileTree(dir: '../../Libs', include: '*.jar')
+    }
+
+//    defaultConfig {
+//        testPackageName "com.zonarsystems.Sample2020App.Test"
+//        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+//    }
+
+
+}
