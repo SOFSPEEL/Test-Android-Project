@@ -12,7 +12,7 @@ apply plugin: 'android'
 
 android {
     compileSdkVersion 10
-    buildToolsVersion "18.1.1"
+    buildToolsVersion "19.0.0"
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
