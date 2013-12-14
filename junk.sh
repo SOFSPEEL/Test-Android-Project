@@ -1,1 +1,1 @@
-sudo /var/lib/jenkins/tools/hudson.plugins.gradle.GradleInstallation/Gradle_1.6/bin/gradle  build
+/var/lib/jenkins/tools/hudson.plugins.gradle.GradleInstallation/Gradle_1.6/bin/gradle  build
